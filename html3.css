@@ -3,5 +3,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
-P{color:red;
-  font-size:20px;}
+.custom-link {
+    color: red; /* Изменяем цвет текста ссылки на красный */
+    text-decoration: none; /* Убираем подчеркивание ссылки */
+}
+
+.custom-link:hover {
+    color: blue; /* Изменяем цвет ссылки при наведении на синий */
+}
