@@ -94,18 +94,19 @@ text-align: left;
 <video width="320" height="240" controls>
   <source src="Video.mp4" type="video/mp4">
 </video>
-  <h2>Введите вашу почту и номер телефона</h2>
-
-<form action="kea25k@mail.ru" method="post">
+<h2>Свяжитесь с нами</h2>
+<form action="kea25k_email.php" method="post">
+    <label for="name">Имя:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    
     <label for="email">Email:</label><br>
     <input type="email" id="email" name="email" required><br><br>
-
-    <label for="phone">Телефон:</label><br>
-    <input type="tel" id="phone" name="phone" pattern="[0-9]{1} [0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}" required><br><br>
+    
+    <label for="message">Сообщение:</label><br>
+    <textarea id="message" name="message" required></textarea><br><br>
     
     <input type="submit" value="Отправить">
 </form>
-php
 <"php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
