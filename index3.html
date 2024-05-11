@@ -105,5 +105,25 @@ text-align: left;
     
     <input type="submit" value="Отправить">
 </form>
+php
+<"php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    $to = "kea25k@mail.ru";
+    $subject = "Новая форма обратной связи от $name";
+    $body = "Имя: $name\nEmail: $email\n\n$message";
+
+    if (mail($to, $subject, $body)) {
+        echo "Ваше сообщение было отправлено.";
+    } else {
+        echo "Ошибка при отправке сообщения.";
+    }
+} else {
+    echo "Недопустимый метод отправки формы.";
+}
+">
 </body>
   
