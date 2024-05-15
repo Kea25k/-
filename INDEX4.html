@@ -40,7 +40,35 @@
   height: 200px;<br>
   background: linear-gradient(to bottom left	, #20B2AA, #B22222);<br> </h3>
   <a href="https://nadip.ru/" class="link">Надип<a>
+<h3>Код для ссылки с градиентом в css:<br>
+    .link {<br>
+    text-decoration: none; <br>
+}<br>
+  .link {<br>
+  position: relative;<br>
+  display: inline-block;<br>
+  padding: 10px;<br>
+  font-size: 16px;<br>
+  color: #000;<br>
+  text-decoration: none;<br>
+}<br>
 
+.link::before {<br>
+  content: '.link';<br>
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #4682B4	, #FF4500);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.link:hover::before {
+  opacity: 1;
+}
+</h3>
 
 
 
