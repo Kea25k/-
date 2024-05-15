@@ -39,35 +39,20 @@
   width: 200px;<br>
   height: 200px;<br>
   background: linear-gradient(to bottom left	, #20B2AA, #B22222);<br> </h3>
-  <a href="https://nadip.ru/" class="link">Надип<a>
-<h3>Код для ссылки с градиентом в css:<br>
-    .link {<br>
-    text-decoration: none; <br>
-}<br>
-  .link {<br>
-  position: relative;<br>
-  display: inline-block;<br>
-  padding: 10px;<br>
-  font-size: 16px;<br>
-  color: #000;<br>
-  text-decoration: none;<br>
-}<br>
+<p>Текстик</p>
+<h3>Код для текста в css:<br>
 
-.link::before {<br>
-  content: '.link';<br>
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to right, #4682B4	, #FF4500);
-  opacity: 0;
-  transition: opacity 0.3s;
+p {
+    color: #5a5a5a; /* Цвет текста */
+    background: #ffc; /* Цвет фона */
+    padding: 10px; /* Поля вокруг текста */
+    transition: 1s linear; /* Время изменения */
 }
-
-.link:hover::before {
-  opacity: 1;
+p:hover {
+    color: #fff; /* Цвет текста */
+    background: #f66d52; /* Цвет фона */
 }
+     
 </h3>
 
 
