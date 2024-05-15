@@ -25,6 +25,9 @@ body {
   height: 200px;
   background: linear-gradient(to bottom left	, #20B2AA, #B22222);
 .link {
+    text-decoration: none; 
+}
+  .link {
   position: relative;
   display: inline-block;
   padding: 10px;
@@ -32,9 +35,7 @@ body {
   color: #000;
   text-decoration: none;
 }
-.link {
-    text-decoration: none; 
-}
+
 .link::before {
   content: '';
   position: absolute;
