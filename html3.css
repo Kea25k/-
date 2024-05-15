@@ -4,10 +4,10 @@ body {
     background-size: cover;
   }
 .custom-link {
-    color: red; /* Изменяем цвет текста ссылки на красный */
-    text-decoration: none; /* Убираем подчеркивание ссылки */
+    color: red; 
+    text-decoration: none; 
 }
 
 .custom-link:hover {
-    color: blue; /* Изменяем цвет ссылки при наведении на синий */
+    color: blue; 
 }
