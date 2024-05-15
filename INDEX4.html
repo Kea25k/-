@@ -39,8 +39,37 @@
   width: 200px;<br>
   height: 200px;<br>
   background: linear-gradient(to bottom left	, #20B2AA, #B22222);<br> </h3>
-<a href="https://nadip.ru/" class="underline-one">Lorem Ipsum</a>
+<a href="https://nadip.ru/" class="underline-one">Nadip</a><br>
+  <h3>Код css:</h3><br>
+<h3>.underline-one {<br>
+	color: #00bfff; /* Цвет обычной ссылки */<br>
+    position: relative;<br>
+    cursor: pointer;<br>
+    text-decoration: none; /* Убираем подчеркивание */<br>
+}<br>
+.underline-one:after {<br>
+	content: "";<br>
+    display: block;<br>
+    position: absolute;<br>
+    right: 0;<br>
+    bottom: -3px;<br>
+    width: 0;<br>
+    height: 2px; /* Высота линии */<br>
+    background-color: black; /* Цвет подчеркивания при исчезании линии*/<br>
+    transition: width 0.5s; /* Время эффекта */<br>
+}<br>
 
+.underline-one:hover:after {<br>
+	content: "";<br>
+    width: 100%;<br>
+    display: block;<br>
+    position: absolute;<br>
+    left: 0;<br>
+    bottom: -3px;<br>
+    height: 2px; /* Высота линии */<br>
+    background-color: red; /* Цвет подчеркивания при появлении линии*/<br>
+    background-color: red; /* Цвет подчеркивания при появлении линии*/<br>
+}</h3><br>
 
 
 
