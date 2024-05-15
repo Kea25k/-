@@ -24,3 +24,15 @@ body {
   width: 200px;
   height: 200px;
   background: linear-gradient(to bottom left	, #20B2AA, #B22222);
+
+p {
+    color: #5a5a5a; /* Цвет текста */
+    background: #ffc; /* Цвет фона */
+    padding: 10px; /* Поля вокруг текста */
+    transition: 1s linear; /* Время изменения */
+}
+p:hover {
+    color: #fff; /* Цвет текста */
+    background: #f66d52; /* Цвет фона */
+}
+     
