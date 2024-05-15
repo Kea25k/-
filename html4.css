@@ -20,3 +20,7 @@ body {
 .button:active {
   transform: translateY(2px);
 }
+.gradient {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to right, #20B2AA, #B22222);
